@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        int opcion_menu = -1;
+        int opcionMenu = -1;
         String [] botones = {
                 "1. ver gatos",
                 "2. salir"
@@ -16,15 +16,15 @@ public class Main {
 
             for(int i = 0; i < botones.length; i++) {
                 if (opcion.equals(botones[i])) {
-                    opcion_menu = i;
+                    opcionMenu = i;
                 }
             }
 
-            switch (opcion_menu){
+            switch (opcionMenu){
                 case 0: GatosService.verGatos();
                 default: break;
             }
 
-        } while(opcion_menu != 1);
+        } while(opcionMenu != 1);
     }
 }
