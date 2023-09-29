@@ -1,9 +1,10 @@
 package org.cats;
 
 import javax.swing.*;
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         int opcionMenu = -1;
         String [] botones = {
                 "1. ver gatos",
