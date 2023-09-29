@@ -2,16 +2,16 @@ package org.cats;
 
 public class Gatos {
 
-    int id;
+    String id;
     String url;
     String apikey = "live_XsmcVUTnO8YgL9yF52JXMKjRATMF0BCZohWRR8fRibZeycdv8No9CJNcxqvyB5Yd";
     String image;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
