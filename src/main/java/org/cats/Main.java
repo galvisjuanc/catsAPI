@@ -7,8 +7,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         int opcionMenu = -1;
         String [] botones = {
-                "1. ver gatos",
-                "2. salir"
+                "1. Ver gatos",
+                "2. Salir"
         };
 
         do {
