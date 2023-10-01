@@ -65,7 +65,7 @@ public class GatosService {
             switch (seleccion) {
                 case 0: verGatos();
                 case 1: favoritoGato(gatos);
-                default: System.out.println("End of the program");
+                default: System.out.println("End of the program. Have a nice day and a wonderful week");
             }
 
         } catch (IOException ioe){
