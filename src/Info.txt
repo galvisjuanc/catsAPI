@@ -1,0 +1,2 @@
+Cats info extracted from this API --> https://thecatapi.com/thanks
+Main Api used to get random cats --> https://api.thecatapi.com/v1/images/search?
