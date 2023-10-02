@@ -46,10 +46,10 @@ public class GatosService {
                 fondoGato = new ImageIcon(modificada);
             }
             String menu = "Opciones: \n" +
-                    " 1. ver otra imagen \n" +
-                    " 2. favorito \n" +
+                    " 1. Ver otra imagen \n" +
+                    " 2. Favorito \n" +
                     " 3. Volver \n";
-            String [] botones = {"ver otra imagen", "favorito", "volver"};
+            String [] botones = {"Ver otra imagen", "Favorito", "Volver"};
             String idGato = gatos.getId();
             String opcion = (String) JOptionPane.showInputDialog(null, menu, idGato,
                     JOptionPane.INFORMATION_MESSAGE, fondoGato, botones, botones[0]);
