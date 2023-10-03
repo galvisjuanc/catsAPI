@@ -158,5 +158,20 @@ public class GatosService {
     }
 
     private static void borrarFavorito(GatosFav gatoFav) {
+        try {
+            OkHttpClient client = new OkHttpClient().newBuilder()
+                    .build();
+            MediaType mediaType = MediaType.parse("application/json");
+            RequestBody body = RequestBody.create(mediaType, "");
+            Request request = new Request.Builder()
+                    .url("https://api.thecatapi.com/v1/favourites/"+gatoFav.getId()+"")
+                    .method("DELETE", body)
+                    .addHeader("Content-Type", "application/json")
+                    .addHeader("x-api-key", gatoFav.getApikey())
+                    .build();
+            Response response = client.newCall(request).execute();
+        } catch (IOException e) {
+            System.out.println(e);
+        }
     }
 }
