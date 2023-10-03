@@ -8,7 +8,8 @@ public class Main {
         int opcionMenu = -1;
         String [] botones = {
                 "1. Ver gatos",
-                "2. Salir"
+                "2. Ver Favoritos",
+                "3. Salir"
         };
 
         do {
@@ -23,6 +24,10 @@ public class Main {
 
             switch (opcionMenu){
                 case 0: GatosService.verGatos();
+                case 1: {
+                    Gatos gato = new Gatos();
+                    GatosService.verFavoritos(gato.getApikey());
+                }
                 default: break;
             }
 
