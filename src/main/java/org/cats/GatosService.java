@@ -148,7 +148,7 @@ public class GatosService {
                 switch (seleccion) {
                     case 0: verFavoritos(apikey);
                     case 1: borrarFavorito(gatoFav);
-                    default: System.out.println("End of the program. Have a nice day and a wonderful week");
+                    default: System.out.println("End of the program. Have a nice day, my friend");
                 }
 
             } catch (IOException ioe){
