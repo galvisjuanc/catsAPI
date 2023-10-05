@@ -1,10 +1,14 @@
 package org.cats;
 
+import io.github.cdimascio.dotenv.Dotenv;
+
 public class Gatos {
+
+    Dotenv dotenv = Dotenv.load();
 
     String id;
     String url;
-    String apikey = "live_XsmcVUTnO8YgL9yF52JXMKjRATMF0BCZohWRR8fRibZeycdv8No9CJNcxqvyB5Yd";
+    String apikey = dotenv.get("API_KEY");
     String image;
 
     public String getId() {
